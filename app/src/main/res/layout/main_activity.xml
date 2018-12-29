@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_main"
+        android:id="@+id/bg_main"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/bgTint"
+        android:contentDescription="For some device, tint cannot apply"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fake_statusbar"
+        android:background="@color/bgCard"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="12dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/web_hi_res_512"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:typeface="monospace"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/title_main"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANUITAS BIASA"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="20sp"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+                    android:id="@+id/nilai_sekarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai Sekarang"
+                    android:theme="@style/ButtonHitung"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/nilai_yang_akan_datang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai yang Akan Datang"
+                    android:theme="@style/ButtonHitung"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANUITAS DI MUKA"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="20sp"
+                    android:fontFamily="monospace"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dimuka_nilai_sekarang"
+                    android:text="Nilai Sekarang"
+                    android:theme="@style/ButtonHitung"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dimuka_nilai_yang_akan_datang"
+                    android:text="Nilai Yang Akan Datang"
+                    android:theme="@style/ButtonHitung"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_app"
+            android:text="Tentang Aplikasi"
+            android:theme="@style/ButtonHitung"
+            android:textColor="@android:color/white"
+            android:layout_margin="12dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
